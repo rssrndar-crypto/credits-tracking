@@ -7,4 +7,5 @@ services:
     dockerfilePath: ./Dockerfile
     dockerContext: .
     healthCheckPath: /
+    startCommand: python3 -m http.server "$PORT" --directory /app
     autoDeploy: true
